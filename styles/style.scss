@@ -1,0 +1,45 @@
+@import './reset.css';
+@import './variables.scss';
+@import './mixin.scss';
+
+:root {
+  --main-text-color: #{$white};
+  --sec-text-color: #{$black};
+
+  --third-text-color: #{$blue};
+  --fourth-text-color: #{$darkblue};
+
+  --blue: #{$blue};
+  --purple: #{$purple};
+  --pink: #{$pink};
+  --red: #{$red};
+  --gold: #{$gold};
+  --silver: #{$silver};
+
+  --main-bg-color: #{$black};
+  --sec-bg-color: #{$white};
+}
+
+body {
+  margin: 0 auto 0 auto;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: normal;
+  background-color: var(--main-bg-color);
+}
+
+img {
+  min-width: 100%;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
